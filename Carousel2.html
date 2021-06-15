@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Carousel</title>
+
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            background: grey;
+
+        }
+
+        .carousel {
+            height: 600px;
+            perspective: 400px;
+        }
+
+        .carousel .carousel-item {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <a class="carousel-item" href="#one!">
+            <img src="picture/1.jpg"></a>
+        <a class="carousel-item" href="#two!">
+            <img src="picture/2.jpg"></a>
+        <a class="carousel-item" href="#three!">
+            <img src="picture/3.jpg"></a>
+        <a class="carousel-item" href="#four!">
+            <img src="picture/4.jpg"></a>
+        <a class="carousel-item" href="#five!">
+            <img src="picture/5.jpg"></a>
+    </div>
+
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.map"> </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Initialization-->
+    <script type="tex/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+</body>
+
+</html>
